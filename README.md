@@ -31,7 +31,8 @@ gpg --armor --export KEY_ID | xclip -selection c
 sudo dpkg -i ~/Downloads/DOWNLOADED_FILE_NAME.deb
 
 # Install node
-sudo apt install npm
+# Start by installing nvm from [here](https://github.com/creationix/nvm)
+nvm install node
 
 # Install yarn
 sudo npm install -g yarn
