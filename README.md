@@ -44,4 +44,12 @@ sudo apt-get install azure-functions-core-tools-3
 
 # Install golang: [download](https://golang.org/doc/install) - may have to update file name if version has changed
 sudo tar -C /usr/local -xzf ~/Downloads/go1.15.8.linux-amd64.tar.gz
+
+# Install .NET 5 with SDK
+wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y aspnetcore-runtime-5.0
 ```

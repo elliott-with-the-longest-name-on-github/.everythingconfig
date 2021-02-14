@@ -20,5 +20,6 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Visual Studio 2019 Dark"
 }
