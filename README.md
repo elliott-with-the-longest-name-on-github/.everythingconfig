@@ -4,8 +4,9 @@ _Note: I recommend running the scripts before installing the applications, if po
 
 ```bash
 # Create symlinks for .config files
-ln -s ~/src/repos/.everythingconfig/.gitconfig ~/.gitconfig
-ln -s ~/src/repos/.everythingconfig/.bashrc ~/.bashrc
+ln -sf ~/src/repos/.everythingconfig/.gitconfig ~/.gitconfig
+ln -sf ~/src/repos/.everythingconfig/.bashrc ~/.bashrc
+ln -sf ~/src/repos/.everythingconfig/.vscode ~/.config/Code/User/settings.json
 
 # Generate a ssh key for the device
 ssh-keygen -t ed25519 -C "sejohnson@torchcloudconsulting.com"
