@@ -1,3 +1,5 @@
 [user]
 	name = S. Elliott Johnson
 	email = sejohnson@torchcloudconsulting.com
+[init]
+	defaultBranch = main
