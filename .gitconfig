@@ -1,5 +1,8 @@
 [user]
 	name = S. Elliott Johnson
 	email = sejohnson@torchcloudconsulting.com
+	signingKey = 4FC051062565A3B6
 [init]
 	defaultBranch = main
+[commit]
+	gpgSign = true
