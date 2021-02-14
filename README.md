@@ -7,6 +7,7 @@ _Note: I recommend running the scripts before installing the applications, if po
 ln -sf ~/src/repos/.everythingconfig/.gitconfig ~/.gitconfig
 ln -sf ~/src/repos/.everythingconfig/.bashrc ~/.bashrc
 ln -sf ~/src/repos/.everythingconfig/.vscode ~/.config/Code/User/settings.json
+ln -sf ~/src/repos/.everythingconfig/.linux-profile ~/.profile
 
 # Generate a ssh key for the device
 ssh-keygen -t ed25519 -C "sejohnson@torchcloudconsulting.com"
@@ -40,4 +41,7 @@ wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-pr
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update
 sudo apt-get install azure-functions-core-tools-3
+
+# Install golang: [download](https://golang.org/doc/install) - may have to update file name if version has changed
+sudo tar -C /usr/local -xzf ~/Downloads/go1.15.8.linux-amd64.tar.gz
 ```
