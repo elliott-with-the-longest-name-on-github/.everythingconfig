@@ -1,0 +1,24 @@
+{
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "[javascript, typescript, json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.detectIndentation": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "workbench.editor.decorations.badges": true,
+    "workbench.editor.decorations.colors": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "go.useLanguageServer": true,
+    "prettier.jsxBracketSameLine": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.confirmSync": false
+}
