@@ -67,4 +67,10 @@ sudo apt-get update; \
   sudo apt-get update && \
   sudo apt-get install -y aspnetcore-runtime-5.0
 sudo apt-get install -y dotnet-sdk-3.1
+
+# Install Slack (if you really need to...): https://slack.com/downloads/linux
+sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/SLACKFILE.deb"
+
+# Install Teams (if you REALLY need to...): 
+sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/TEAMSFILE.deb"
 ```
