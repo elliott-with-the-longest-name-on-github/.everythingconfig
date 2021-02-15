@@ -73,6 +73,17 @@ sudo apt-get update; \
   sudo apt-get install -y aspnetcore-runtime-5.0
 sudo apt-get install -y dotnet-sdk-3.1
 
+# Install Azure Data Studio: https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
+sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/AZUREDATASTUDIO.deb"
+
+# Install Insomnia
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+    | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install insomnia
+
 # Install Slack (if you really need to...): https://slack.com/downloads/linux
 sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/SLACKFILE.deb"
 
