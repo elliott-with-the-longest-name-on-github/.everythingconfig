@@ -3,6 +3,9 @@
 _Note: I recommend running the scripts before installing the applications, if possible._
 
 ```bash
+export EVERYTHINGCONFIG_HOMEPATH = "~/"
+export EVERYTHINGCONFIG_REPOPATH = "~/src/repos/.everythingconfig"
+
 # Generate a ssh key for the device
 ssh-keygen -t ed25519 -C "sejohnson@torchcloudconsulting.com"
 eval "$(ssh-agent -s)"
