@@ -30,6 +30,9 @@ gpg --armor --export KEY_ID | xclip -selection c
 # Install VSCode - I recommend downloading .deb from VSCode site
 sudo dpkg -i ~/Downloads/DOWNLOADED_FILE_NAME.deb
 
+# Install Kite
+bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
+
 # Install node
 # Start by installing nvm from [here](https://github.com/creationix/nvm)
 nvm install node
