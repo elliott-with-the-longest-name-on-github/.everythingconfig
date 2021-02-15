@@ -75,6 +75,10 @@ sudo apt-get install -y dotnet-sdk-3.1
 
 # Install Azure Data Studio: https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
 sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/AZUREDATASTUDIO.deb"
+# Check to make sure you have Ubuntu-based dependencies...
+sudo apt-get install libxss1
+sudo apt-get install libgconf-2-4
+sudo apt-get install libunwind8
 
 # Install Insomnia
 echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
