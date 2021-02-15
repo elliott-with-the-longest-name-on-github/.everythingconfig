@@ -3,9 +3,13 @@
 _Note: I recommend running the scripts before installing the applications, if possible._
 
 ```bash
-export EVERYTHINGCONFIG_HOMEPATH = "~"
-export EVERYTHINGCONFIG_REPOPATH = "~/src/repos/.everythingconfig"
-export EVERYTHINGCONFIG_DOWNLOADPATH = "~/Downloads"
+export EVERYTHINGCONFIG_HOMEPATH="$HOME"
+export EVERYTHINGCONFIG_REPOPATH="$HOME/src/repos/.everythingconfig"
+export EVERYTHINGCONFIG_DOWNLOADPATH="$HOME/Downloads"
+
+# Create a local git file to hold device-specific stuff (like GPG key IDs)
+touch "$EVERYTHINGCONFIG_REPOPATH/.localgit"
+printf "[user]\n    signingKey = GPGKEYHERE" >> "$EVERYTHINGCONFIG_REPOPATH/.localgit"
 
 
 # Generate a ssh key for the device
@@ -19,10 +23,11 @@ xclip -selection clipboard < ~/.ssh/id_ed25519.pub
 # Now add it to GitHub (probably a way to api-ize this, but I'm too busy)
 
 # Generate a GPG key for the device
-sudo apt-install gnupg
+sudo apt-get install gnupg
 gpg --full-generate-key
 # Follow through instructions, then find your key's ID:
 gpg --list-secret-keys --keyid-format LONG
+# Remember to add the Key ID to .localgit
 gpg --armor --export KEY_ID | xclip -selection c
 # Add the clipboarded text as a GPG key in GitHub
 
@@ -43,11 +48,11 @@ bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
 nvm install node
 
 # Install yarn
-sudo npm install -g yarn
+npm install -g yarn
 
 # Install Azure Functions Core Tools (make sure deb version is correct)
-wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
+wget -q --directory-prefix=$EVERYTHINGCONFIG_DOWNLOADPATH https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/packages-microsoft-prod.deb"
 sudo apt-get update
 sudo apt-get install azure-functions-core-tools-3
 
@@ -55,8 +60,8 @@ sudo apt-get install azure-functions-core-tools-3
 sudo tar -C /usr/local -xzf ~/Downloads/go1.15.8.linux-amd64.tar.gz
 
 # Install .NET Runtime and .NET 5.0 and 3.1 SDKs
-wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O "$EVERYTHINGCONFIG_DOWNLOADPATH/packages-microsoft-prod.deb"
+sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/packages-microsoft-prod.deb"
 sudo apt-get update; \
   sudo apt-get install -y apt-transport-https && \
   sudo apt-get update && \
