@@ -3,8 +3,10 @@
 _Note: I recommend running the scripts before installing the applications, if possible._
 
 ```bash
-export EVERYTHINGCONFIG_HOMEPATH = "~/"
+export EVERYTHINGCONFIG_HOMEPATH = "~"
 export EVERYTHINGCONFIG_REPOPATH = "~/src/repos/.everythingconfig"
+export EVERYTHINGCONFIG_DOWNLOADPATH = "~/Downloads"
+
 
 # Generate a ssh key for the device
 ssh-keygen -t ed25519 -C "sejohnson@torchcloudconsulting.com"
@@ -25,13 +27,13 @@ gpg --armor --export KEY_ID | xclip -selection c
 # Add the clipboarded text as a GPG key in GitHub
 
 # Create symlinks for .config files
-ln -sf ~/src/repos/.everythingconfig/.gitconfig ~/.gitconfig
-ln -sf ~/src/repos/.everythingconfig/.bashrc ~/.bashrc
-ln -sf ~/src/repos/.everythingconfig/.vscode ~/.config/Code/User/settings.json
-ln -sf ~/src/repos/.everythingconfig/.linux-profile ~/.profile
+ln -sf "$EVERYTHINGCONFIG_REPOPATH/.gitconfig" "$EVERYTHINGCONFIG_HOMEPATH/.gitconfig"
+ln -sf "$EVERYTHINGCONFIG_REPOPATH/.bashrc" "$EVERYTHINGCONFIG_HOMEPATH/.bashrc"
+ln -sf "$EVERYTHINGCONFIG_REPOPATH/.vscode" "$EVERYTHINGCONFIG_HOMEPATH/.config/Code/User/settings.json"
+ln -sf "$EVERYTHINGCONFIG_REPOPATH/.linux-profile" "$EVERYTHINGCONFIG_HOMEPATH/.profile"
 
 # Install VSCode - I recommend downloading .deb from VSCode site
-sudo dpkg -i ~/Downloads/DOWNLOADED_FILE_NAME.deb
+sudo dpkg -i "$EVERYTHINGCONFIG_DOWNLOADPATH/DOWNLOADED_FILE_NAME.deb"
 
 # Install Kite
 bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
