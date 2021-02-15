@@ -3,12 +3,6 @@
 _Note: I recommend running the scripts before installing the applications, if possible._
 
 ```bash
-# Create symlinks for .config files
-ln -sf ~/src/repos/.everythingconfig/.gitconfig ~/.gitconfig
-ln -sf ~/src/repos/.everythingconfig/.bashrc ~/.bashrc
-ln -sf ~/src/repos/.everythingconfig/.vscode ~/.config/Code/User/settings.json
-ln -sf ~/src/repos/.everythingconfig/.linux-profile ~/.profile
-
 # Generate a ssh key for the device
 ssh-keygen -t ed25519 -C "sejohnson@torchcloudconsulting.com"
 eval "$(ssh-agent -s)"
@@ -26,6 +20,12 @@ gpg --full-generate-key
 gpg --list-secret-keys --keyid-format LONG
 gpg --armor --export KEY_ID | xclip -selection c
 # Add the clipboarded text as a GPG key in GitHub
+
+# Create symlinks for .config files
+ln -sf ~/src/repos/.everythingconfig/.gitconfig ~/.gitconfig
+ln -sf ~/src/repos/.everythingconfig/.bashrc ~/.bashrc
+ln -sf ~/src/repos/.everythingconfig/.vscode ~/.config/Code/User/settings.json
+ln -sf ~/src/repos/.everythingconfig/.linux-profile ~/.profile
 
 # Install VSCode - I recommend downloading .deb from VSCode site
 sudo dpkg -i ~/Downloads/DOWNLOADED_FILE_NAME.deb
