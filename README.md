@@ -1,3 +1,8 @@
+# .everythingconfig
+
+All my all my configurations in one place, ready to install on any Ubuntu-based system.
+Like the setup and want to make it your own? Fork it! All I ask is that if you find ways to automate some of these things, you PR them into my repo so I can take advantage of them as well! :)
+
 # Execute the following commands in order.
 
 _Note: I recommend running the scripts before installing the applications, if possible._
