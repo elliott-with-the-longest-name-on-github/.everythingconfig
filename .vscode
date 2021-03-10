@@ -21,5 +21,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "git.confirmSync": false,
-    "workbench.colorTheme": "Visual Studio 2019 Dark"
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    "prettier.jsxSingleQuote": true,
+    "prettier.packageManager": "yarn",
+    "prettier.printWidth": 120,
+    "prettier.singleQuote": true,
+    "editor.tabSize": 2
 }
