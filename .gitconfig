@@ -7,3 +7,5 @@
 	gpgSign = true
 [include]
     path = ~/src/repos/.everythingconfig/.localgit
+[push]
+	followTags = true
