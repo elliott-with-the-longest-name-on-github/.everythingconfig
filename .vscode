@@ -16,10 +16,16 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.tabWidth": 4,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "git.confirmSync": false,
-    "workbench.colorTheme": "Visual Studio 2019 Dark"
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    "prettier.packageManager": "yarn",
+    "prettier.printWidth": 120,
+    "prettier.requireConfig": true,
+    "editor.tabSize": 2,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
