@@ -20,5 +20,7 @@
     "prettier.packageManager": "yarn",
     "prettier.printWidth": 120,
     "prettier.requireConfig": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false,
+    "editor.renderControlCharacters": true
 }

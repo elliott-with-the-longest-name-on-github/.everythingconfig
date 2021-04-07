@@ -119,3 +119,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+net_extender_pw=`jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrcprivate.json`
+alias fish="netExtender -u sejohnson -p "$(jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrcprivate.json)" -d LocalDomain vpn.griffisresidential.com:4433"
