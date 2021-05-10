@@ -21,6 +21,12 @@
     "prettier.printWidth": 120,
     "prettier.requireConfig": true,
     "editor.tabSize": 2,
-    "explorer.confirmDelete": false,
     "editor.renderControlCharacters": true
+    "[svelte]": {
+      "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDelete": false
 }
