@@ -26,5 +26,12 @@
     "prettier.packageManager": "yarn",
     "prettier.printWidth": 120,
     "prettier.singleQuote": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "[svelte]": {
+      "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDelete": false
 }
