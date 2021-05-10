@@ -2,7 +2,7 @@
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "[javascript, typescript, json]": {
+    "[javascript, typescript, typescriptreact, json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.detectIndentation": false,
@@ -13,18 +13,14 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "go.useLanguageServer": true,
     "prettier.jsxBracketSameLine": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "prettier.tabWidth": 4,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "git.confirmSync": false,
     "workbench.colorTheme": "Visual Studio 2019 Dark",
     "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
     "prettier.packageManager": "yarn",
     "prettier.printWidth": 120,
-    "prettier.singleQuote": true,
-    "editor.tabSize": 2
+    "prettier.requireConfig": true,
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false,
+    "editor.renderControlCharacters": true
 }
