@@ -17,16 +17,29 @@
     "workbench.colorTheme": "Visual Studio 2019 Dark",
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
-    "prettier.packageManager": "yarn",
     "prettier.printWidth": 120,
     "prettier.requireConfig": true,
     "editor.tabSize": 2,
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": true,
     "[svelte]": {
       "editor.defaultFormatter": "svelte.svelte-vscode"
     },
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.useEditorFormattingSettings": false,
+    "svelte.enable-ts-plugin": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "[csharp]": {
+      "editor.tabSize": 4
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
