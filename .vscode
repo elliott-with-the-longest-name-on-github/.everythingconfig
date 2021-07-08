@@ -1,6 +1,5 @@
 {
     "editor.formatOnType": true,
-    "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "[javascript, typescript, typescriptreact, json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -22,5 +21,48 @@
     "prettier.requireConfig": true,
     "editor.tabSize": 2,
     "explorer.confirmDelete": false,
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": true,
+    "mssql.connections": [
+      {
+        "server": "sql-griffisbi.database.windows.net",
+        "database": "griffisdatawarehouse-prod",
+        "authenticationType": "AzureMFA",
+        "profileName": "griffisdw-prod",
+        "azureAccountToken": "",
+        "email": "sejohnson@griffisresidential.com",
+        "accountId": "185593bc-d4fa-4000-80c4-c74bcd2164de",
+        "password": ""
+      },
+      {
+        "server": "sql-griffisbi.database.windows.net",
+        "database": "test-realpage",
+        "authenticationType": "AzureMFA",
+        "profileName": "test-realpage",
+        "azureAccountToken": "",
+        "email": "sejohnson@griffisresidential.com",
+        "accountId": "185593bc-d4fa-4000-80c4-c74bcd2164de",
+        "password": ""
+      }
+    ],
+    "sqltools.format": {
+      "reservedWordCase": "upper",
+      "language": "sql",
+      "linesBetweenQueries": 2
+    },
+    "[sql]": {
+      "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "[svelte]": {
+      "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "omnisharp.organizeImportsOnFormat": true,
+    "omnisharp.useEditorFormattingSettings": false,
+    "svelte.enable-ts-plugin": true
 }
