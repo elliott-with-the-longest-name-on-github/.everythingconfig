@@ -13,7 +13,6 @@
     "go.useLanguageServer": true,
     "prettier.jsxBracketSameLine": true,
     "git.confirmSync": false,
-    "workbench.colorTheme": "Visual Studio 2019 Dark",
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     "prettier.printWidth": 120,
@@ -71,5 +70,6 @@
     },
     "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "workbench.colorTheme": "Visual Studio 2019 Dark"
 }
