@@ -19,13 +19,6 @@
     "prettier.printWidth": 120,
     "prettier.requireConfig": true,
     "editor.tabSize": 2,
-    "editor.renderControlCharacters": true,
-    "[svelte]": {
-      "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "explorer.confirmDelete": false,
     "editor.renderControlCharacters": true,
     "mssql.connections": [
@@ -67,13 +60,7 @@
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "explorer.confirmDragAndDrop": false,
     "omnisharp.organizeImportsOnFormat": true,
-    "omnisharp.useEditorFormattingSettings": false,
-    "svelte.enable-ts-plugin": true
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "explorer.confirmDragAndDrop": false,
     "omnisharp.enableEditorConfigSupport": true,
     "omnisharp.useEditorFormattingSettings": false,
