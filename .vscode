@@ -16,11 +16,18 @@
     "workbench.colorTheme": "Visual Studio 2019 Dark",
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
-    "prettier.packageManager": "yarn",
     "prettier.printWidth": 120,
     "prettier.requireConfig": true,
     "editor.tabSize": 2,
+    "editor.renderControlCharacters": true,
+    "[svelte]": {
+      "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "explorer.confirmDelete": false,
+<<<<<<< HEAD
     "editor.renderControlCharacters": true,
     "mssql.connections": [
       {
@@ -65,4 +72,20 @@
     "omnisharp.organizeImportsOnFormat": true,
     "omnisharp.useEditorFormattingSettings": false,
     "svelte.enable-ts-plugin": true
+=======
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.useEditorFormattingSettings": false,
+    "svelte.enable-ts-plugin": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "[csharp]": {
+      "editor.tabSize": 4
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+>>>>>>> 051997e488f7fbb8bb17919f6ca2e90d5fc8a818
 }
