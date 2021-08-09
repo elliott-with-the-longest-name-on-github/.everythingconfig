@@ -11,6 +11,19 @@
     "workbench.editor.decorations.colors": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "go.useLanguageServer": true,
+    "go.delveConfig": {
+      "debugAdapter": "dlv-dap"
+    },
+    "go.addTags": {
+      "tags": "json",
+      "options": "json=omitempty",
+    },
+    "go.lintTool": "staticcheck",
+    "go.lintOnSave": "file",
+    "[go]": {
+      "editor.tabSize": 4, 
+      "editor.insertSpaces": false
+    },
     "prettier.jsxBracketSameLine": true,
     "git.confirmSync": false,
     "prettier.jsxSingleQuote": true,
@@ -71,5 +84,6 @@
     "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Visual Studio 2019 Dark"
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    "editor.formatOnSave": true
 }
