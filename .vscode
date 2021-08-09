@@ -33,28 +33,6 @@
     "editor.tabSize": 2,
     "explorer.confirmDelete": false,
     "editor.renderControlCharacters": true,
-    "mssql.connections": [
-      {
-        "server": "sql-griffisbi.database.windows.net",
-        "database": "griffisdatawarehouse-prod",
-        "authenticationType": "AzureMFA",
-        "profileName": "griffisdw-prod",
-        "azureAccountToken": "",
-        "email": "sejohnson@griffisresidential.com",
-        "accountId": "185593bc-d4fa-4000-80c4-c74bcd2164de",
-        "password": ""
-      },
-      {
-        "server": "sql-griffisbi.database.windows.net",
-        "database": "test-realpage",
-        "authenticationType": "AzureMFA",
-        "profileName": "test-realpage",
-        "azureAccountToken": "",
-        "email": "sejohnson@griffisresidential.com",
-        "accountId": "185593bc-d4fa-4000-80c4-c74bcd2164de",
-        "password": ""
-      }
-    ],
     "sqltools.format": {
       "reservedWordCase": "upper",
       "language": "sql",
