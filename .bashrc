@@ -122,4 +122,5 @@ export NVM_DIR="$HOME/.nvm"
 
 net_extender_pw=`jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrcprivate.json`
 alias fish="netExtender -u sejohnson -p "$(jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrcprivate.json)" -d LocalDomain vpn.griffisresidential.com:4433"
-alias gitdeletemerged="git branch --merged | egrep -v \"$(^\*|master|main|dev)\" | xargs git branch -d"
+alias gitlistmerged='git branch --merged | egrep -v "(^\*|master|main|dev)"'
+alias gitdeletemerged='gitlistmerged | xargs git branch -d'
