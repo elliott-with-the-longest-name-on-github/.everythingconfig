@@ -16,7 +16,7 @@
     },
     "go.addTags": {
       "tags": "json",
-      "options": "json=omitempty",
+      "options": "json=omitempty"
     },
     "go.lintTool": "staticcheck",
     "go.lintOnSave": "file",
