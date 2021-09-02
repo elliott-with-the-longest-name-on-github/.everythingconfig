@@ -62,6 +62,7 @@
     "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Visual Studio 2019 Dark",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons"
 }
