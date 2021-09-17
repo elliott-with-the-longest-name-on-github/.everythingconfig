@@ -64,5 +64,23 @@
     },
     "editor.formatOnSave": true,
     "workbench.colorTheme": "Monokai Pro",
-    "workbench.iconTheme": "Monokai Pro Icons"
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
+    "[python]": {
+      "editor.tabSize": 4
+    },
+    "mssql.connections": [
+      {
+        "server": "{{put-server-name-here}}",
+        "database": "{{put-database-name-here}}",
+        "user": "{{put-username-here}}",
+        "password": "{{put-password-here}}"
+      }
+    ]
 }
