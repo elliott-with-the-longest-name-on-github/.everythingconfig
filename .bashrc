@@ -122,3 +122,6 @@ export NVM_DIR="$HOME/.nvm"
 
 net_extender_pw=`jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrcprivate.json`
 alias fish="netExtender -u sejohnson -p "$(jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrcprivate.json)" -d LocalDomain vpn.griffisresidential.com:4433"
+PATH="$HOME/.local/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -1,86 +1,88 @@
 {
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "[javascript, typescript, typescriptreact, json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.detectIndentation": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "kite.showWelcomeNotificationOnStartup": false,
-    "workbench.editor.decorations.badges": true,
-    "workbench.editor.decorations.colors": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "go.useLanguageServer": true,
-    "go.delveConfig": {
-      "debugAdapter": "dlv-dap"
-    },
-    "go.addTags": {
-      "tags": "json",
-      "options": "json=omitempty"
-    },
-    "go.lintTool": "staticcheck",
-    "go.lintOnSave": "file",
-    "[go]": {
-      "editor.tabSize": 4, 
-      "editor.insertSpaces": false
-    },
-    "prettier.jsxBracketSameLine": true,
-    "git.confirmSync": false,
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.printWidth": 120,
-    "prettier.requireConfig": true,
-    "editor.tabSize": 2,
-    "explorer.confirmDelete": false,
-    "editor.renderControlCharacters": true,
-    "sqltools.format": {
-      "reservedWordCase": "upper",
-      "language": "sql",
-      "linesBetweenQueries": 2
-    },
-    "[sql]": {
-      "editor.defaultFormatter": "mtxr.sqltools"
-    },
-    "[svelte]": {
-      "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "omnisharp.organizeImportsOnFormat": true,
-    "explorer.confirmDragAndDrop": false,
-    "omnisharp.enableEditorConfigSupport": true,
-    "omnisharp.useEditorFormattingSettings": false,
-    "svelte.enable-ts-plugin": true,
-    "omnisharp.enableRoslynAnalyzers": true,
-    "[csharp]": {
-      "editor.tabSize": 4
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.formatOnSave": true,
-    "workbench.colorTheme": "Monokai Pro",
-    "workbench.iconTheme": "Monokai Pro Icons",
-    "workbench.editorAssociations": {
-      "*.ipynb": "jupyter-notebook"
-    },
-    "notebook.cellToolbarLocation": {
-      "default": "right",
-      "jupyter-notebook": "left"
-    },
-    "[python]": {
-      "editor.tabSize": 4
-    },
-    "mssql.connections": [
-      {
-        "server": "{{put-server-name-here}}",
-        "database": "{{put-database-name-here}}",
-        "user": "{{put-username-here}}",
-        "password": "{{put-password-here}}"
-      }
-    ]
+	"[csharp]": {
+		"editor.tabSize": 4
+	},
+	"[go]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false
+	},
+	"[javascript, typescript, typescriptreact, json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[python]": {
+		"editor.tabSize": 4
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "mtxr.sqltools"
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.detectIndentation": false,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.renderControlCharacters": true,
+	"editor.tabSize": 2,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"go.addTags": {
+		"tags": "json",
+		"options": "",
+		"transform": "camelcase"
+	},
+	"go.autocompleteUnimportedPackages": true,
+	"go.delveConfig": {
+		"debugAdapter": "dlv-dap"
+	},
+	"go.lintTool": "staticcheck",
+	"go.toolsManagement.autoUpdate": true,
+	"go.useLanguageServer": true,
+	"json.schemas": [],
+	"kite.showWelcomeNotificationOnStartup": false,
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"omnisharp.enableEditorConfigSupport": true,
+	"omnisharp.enableRoslynAnalyzers": true,
+	"omnisharp.organizeImportsOnFormat": true,
+	"omnisharp.useEditorFormattingSettings": false,
+	"prettier.jsxBracketSameLine": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.printWidth": 120,
+	"prettier.requireConfig": true,
+	"prettier.singleQuote": true,
+	"python.formatting.provider": "black",
+	"sqltools.format": {
+		"reservedWordCase": "upper",
+		"language": "sql",
+		"linesBetweenQueries": 2
+	},
+	"svelte.ask-to-enable-ts-plugin": false,
+	"svelte.enable-ts-plugin": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"workbench.colorTheme": "Monokai Pro",
+	"workbench.editor.decorations.badges": true,
+	"workbench.editor.decorations.colors": true,
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"workbench.iconTheme": "Monokai Pro Icons"
 }
