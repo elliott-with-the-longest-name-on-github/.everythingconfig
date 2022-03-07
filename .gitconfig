@@ -6,7 +6,7 @@
 [commit]
 	gpgSign = true
 [include]
-  path = $HOME/src/repos/.everythingconfig/.localgit
+  path = /home/src/repos/.everythingconfig/.localgit
 [push]
 	followTags = true
 [alias]
@@ -14,3 +14,8 @@
   drm = "!f() { git lrm | xargs git branch -d ; }; f"
 [pull]
 	ff = only
+[gpg]
+  program = C:/Program Files (x86)/gnupg/bin/gpg.exe
+[user]
+  signingKey = 189485FD9404B562
+

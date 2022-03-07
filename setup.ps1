@@ -3,6 +3,8 @@ $EVERYTHINGCONFIG_REPOPATH = "$HOME\src\repos\.everythingconfig"
 
 $GIT_EMAIL = "sejohnson@torchcloudconsulting.com"
 
+choco install git -y
+
 # Create a local git file to hold device-specific stuff (like GPG key IDs)
 $LOCALGIT_PATH = "$EVERYTHINGCONFIG_REPOPATH\.localgit"
 touch "$LOCALGIT_PATH"
@@ -25,7 +27,9 @@ gpg --list-secret-keys --keyid-format=long
 $KEY_ID = Read-Host "GPG just printed your key to the terminal. Copy the Key ID (looks like sec rsa4096/KEY_ID) and paste it here"
 $LOCALGIT_PATH = "$EVERYTHINGCONFIG_REPOPATH\.localgit"
 touch "$LOCALGIT_PATH"
-"[user]`r`n    signingKey = $KEY_ID" > "$LOCALGIT_PATH"
+"[user]`r`n    signingKey = $KEY_ID`r`n" > "$LOCALGIT_PATH"
+$SYSTEM_GIT_CONFIGPATH = "C:\Program Files\Git\etc\gitconfig"
+Add-Content -Path "$SYSTEM_GIT_CONFIGPATH" -Value "[gpg]`r`n  program = C:/Program Files (x86)/gnupg/bin/gpg.exe"
 gpg --armor --export $KEY_ID | Set-Clipboard
 Read-Host "GPG Key is on the clipboard. Put it in GitHub at https://github.com/settings/keys. Done? (Y/n)"
 
