@@ -3,10 +3,6 @@
 	email = sejohnson@torchcloudconsulting.com
 [init]
 	defaultBranch = main
-[commit]
-	gpgSign = true
-[include]
-  path = "/home/src/repos/.everythingconfig/.localgit"
 [push]
 	followTags = true
 [alias]
