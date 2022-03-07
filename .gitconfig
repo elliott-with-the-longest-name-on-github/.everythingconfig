@@ -6,7 +6,7 @@
 [commit]
 	gpgSign = true
 [include]
-    path = ~/src/repos/.everythingconfig/.localgit
+  path = $HOME/src/repos/.everythingconfig/.localgit
 [push]
 	followTags = true
 [alias]
