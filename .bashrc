@@ -124,4 +124,4 @@ net_extender_pw=`jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrc
 alias fish="netExtender -u sejohnson -p "$(jq '.netExtenderPassword' ~/src/repos/.everythingconfig/.bashrcprivate.json)" -d LocalDomain vpn.griffisresidential.com:4433"
 PATH="$HOME/.local/bin:$PATH"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/src/applications/GoLand-2021.3.3/bin:$HOME/src/applications/pycharm-2021.3.2/bin:$HOME/src/applications/JetBrains Rider-2021.3.3/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/src/applications/GoLand-2021.3.3/bin:$HOME/src/applications/pycharm-2021.3.2/bin:$HOME/src/applications/JetBrains Rider-2021.3.3/bin:$HOME/src/applications/idea-IU-213.7172.25/bin:$PATH"

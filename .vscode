@@ -84,5 +84,6 @@
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter-notebook"
 	},
-	"workbench.iconTheme": "Monokai Pro Icons"
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "aws.profile": "profile:default"
 }
